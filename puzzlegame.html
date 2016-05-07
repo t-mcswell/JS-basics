@@ -40,7 +40,7 @@
 	var answer3_2 = 'огурцы';
 	trycount = 0;
 	while (trycount < 2) {
-		var useranswer3 = prompt ('Отгадайте вторую загадку: не лает, не кусает, а в дом не пускает. Что это?').toLowerCase();
+		var useranswer3 = prompt ('Отгадайте третью загадку: без окон, без дверей, полна горница людей. Что это?').toLowerCase();
 		if (useranswer3 == answer3_1 || useranswer3 == answer3_2) {
 		rightanswercount = rightanswercount + 1;
 		trycount = trycount + 2;
@@ -52,5 +52,5 @@
 			} else alert ('Неправильно');
 		}
 	}
-	alert ('Игра окончена, правильных ответов ' + rightanswercount + ' из 2.');
+	alert ('Игра окончена, правильных ответов ' + rightanswercount + ' из 3.');
 </script>
