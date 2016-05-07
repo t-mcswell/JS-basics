@@ -35,5 +35,22 @@
 			} else alert ('Неправильно');
 		}
 	}
+	//загадка про огурец:
+	var answer3_1 = 'огурец';
+	var answer3_2 = 'огурцы';
+	trycount = 0;
+	while (trycount < 2) {
+		var useranswer3 = prompt ('Отгадайте вторую загадку: не лает, не кусает, а в дом не пускает. Что это?').toLowerCase();
+		if (useranswer3 == answer3_1 || useranswer3 == answer3_2) {
+		rightanswercount = rightanswercount + 1;
+		trycount = trycount + 2;
+		alert ('Правильно!');
+		} else {
+		trycount = trycount + 1;
+		if (trycount < 2) {
+				alert ('Неправильно, попробуйте ещё раз');
+			} else alert ('Неправильно');
+		}
+	}
 	alert ('Игра окончена, правильных ответов ' + rightanswercount + ' из 2.');
 </script>
