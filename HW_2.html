@@ -1,0 +1,39 @@
+<meta charset='utf-8'>
+<script>
+	var rightanswercount = 0;
+	//загадка про ножницы:
+	var answer1 = 'ножницы';
+	var trycount = 0; //для счёта попыток
+	while (trycount < 2) {
+		var useranswer1 = prompt ('Отгадайте первую загадку: два кольца, два конца, посередине - гвоздик. Что это?').toLowerCase();
+		if (useranswer1 == answer1) {
+		rightanswercount = rightanswercount + 1;
+		trycount = trycount + 2;
+		alert ('Правильно!');
+		} else {
+		trycount = trycount + 1;
+			if (trycount < 2) {
+				alert ('Неправильно, попробуйте ещё раз');
+			} else alert ('Неправильно');
+		}
+	}
+	//загадка про замок:
+	var answer2_1 = 'замок';
+	var answer2_2 = 'засов';
+	var answer2_3 = 'запор';
+	trycount = 0;
+	while (trycount < 2) {
+		var useranswer2 = prompt ('Отгадайте вторую загадку: не лает, не кусает, а в дом не пускает. Что это?').toLowerCase();
+		if (useranswer2 == answer2_1 || useranswer2 == answer2_2 || useranswer2 == answer2_3) {
+		rightanswercount = rightanswercount + 1;
+		trycount = trycount + 2;
+		alert ('Правильно!');
+		} else {
+		trycount = trycount + 1;
+		if (trycount < 2) {
+				alert ('Неправильно, попробуйте ещё раз');
+			} else alert ('Неправильно');
+		}
+	}
+	alert ('Игра окончена, правильных ответов ' + rightanswercount + ' из 2.');
+</script>
