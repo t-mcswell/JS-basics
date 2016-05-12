@@ -1,19 +1,19 @@
-<meta charset='utf-8'>
-<script type='text/javascript'>
+<meta charset="utf-8">
+<script type="text/javascript">
 
 	function askQuestion (question, answer) {
 		var tryCount = 2;
 		do {
 			var userAnswer = prompt(question);
 			if (userAnswer.toLowerCase() == answer) {
-			alert ('Правильно!');
+			alert ("Правильно!");
 			return true;
 			} else {
 				tryCount--;
 				if (tryCount > 0) {
-				alert ('Неправильно, попробуйте ещё раз');
+				alert ("Неправильно, попробуйте ещё раз");
 				} else {
-				alert ('Неправильно')
+				alert ("Неправильно")
 				}
 			}
 		} while(tryCount > 0); {
@@ -22,14 +22,14 @@
 	}
 
 	var rightAnswerCount = 0;
-	var isTrue = askQuestion('Отгадайте первую загадку: два кольца, два конца, посередине - гвоздик. Что это?', 'ножницы');
+	var isTrue = askQuestion("Отгадайте первую загадку: два кольца, два конца, посередине - гвоздик. Что это?", "ножницы");
 	if(isTrue) {
 		rightAnswerCount++;
 	}
-	if(askQuestion('Отгадайте вторую загадку: не лает, не кусает, а в дом не пускает. Что это?', 'замок')) {
+	if(askQuestion("Отгадайте вторую загадку: не лает, не кусает, а в дом не пускает. Что это?", "замок")) {
 		rightAnswerCount++;
 	}
 
-	alert('Игра окончена, правильных ответов ' + rightAnswerCount + ' из 2.');
+	alert("Игра окончена, правильных ответов " + rightAnswerCount + " из 2.");
 	
 </script>
